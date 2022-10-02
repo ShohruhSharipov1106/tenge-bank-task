@@ -24,6 +24,7 @@ class HomePage extends StatelessWidget {
             height: size.height * 0.3,
             width: size.width * 0.9,
             margin: const EdgeInsets.all(20),
+          
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(25),
               color: context.read<CardDesignProvider>().currentColor,
@@ -44,8 +45,10 @@ class HomePage extends StatelessWidget {
                     sigmaX: 0,
                     sigmaY: context.read<CardDesignProvider>().slider * 10),
                 child: Container(
+                  height: size.height * 0.3,
+                  width: size.width * 0.9,
                   margin: const EdgeInsets.all(20),
-                  alignment: Alignment.bottomRight,
+                    alignment: Alignment.bottomLeft,
                   child: RichText(
                     text: TextSpan(
                       children: [
